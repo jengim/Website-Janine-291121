@@ -1,0 +1,26 @@
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    border-radius: 0;
+    transform-origin: center center;
+    top: 0;
+    left: 0;
+    z-index: 101
+}
+
+.cursor,.cursor span {
+    display: block;
+    -webkit-transform-origin: center center
+}
+
+.cursor span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: transparent;
+    transform-origin: center center;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background-color: black
+}

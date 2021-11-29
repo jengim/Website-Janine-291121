@@ -20,7 +20,7 @@
             font-size: 70;
             font-family: 'Courier New', Courier, monospace;
             color: #fff;
-            background-color:rgb(15, 15, 15);
+            background-color:red;
 			transition: background-color 1s;
             user-select: none;
         }
@@ -46,7 +46,7 @@
             background-color: white;
             color: black;
             padding: 0.25rem 0.5rem;
-            border-radius: 2px;
+            /* border-radius: 5px; */
         }
 
         .me-list {
@@ -63,15 +63,8 @@
             background-color: black;
             color: white;
             padding: 0.25rem 0.5rem;
-            border-radius: 2px;
+            /* border-radius: 5px; */
         }
-        a{
-        color: rgb(227, 168, 255);
-        }
-        a:hover {
-            color: rgb(86, 221, 255);
-        }
-
         figure {
             margin: 0;
             padding: 0;
@@ -82,40 +75,36 @@
             /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: 200; */
         }
-
-
+        
+        a{
+        color: rgb(227, 168, 255);
+     }
+     a:hover {
+            color: rgb(86, 221, 255);
+        }
     </style>
 
 </head>
 <body>
+    <p><a href="index.html">Back</a></p>
+    <h1>Rainbow Background</h1>
+    <h2>Javascript</h2>
+    <img src= "giphy.gif" width=510>
 
- <h1> Coding 4 the Arts</h1>  
- 
- <h3> Übersicht</h3>
- <ul class="work-list">    
-        <li><a href="stars.html">Stars</a> 7.11.21</li>
-        <li><a href="carres.html">Carres</a> 15.11.21</li>
-        <li><a href="meules.html">Meules</a> 15.11.21</li>
-        <li><a href="shootingstar.html">Ball</a> 22.11.21</li>
-        <li><a href="flag.html"> Flag</a> 22.11.21</li>
-        <li><a href="lissajous.html">Lissajous</a> 27.11.21</li>
-        <li><a href="random.html">Rainbow BG</a> 29.11.21</li>
-</ul>
-<br>
-<ul class="me-list">  
-    <li>Janine Lorenz</li>  
-    <li><a href="https://alltag.ch/menschen/"> Alltag Agentur</a></li>
-    <li><a href="mailto:jl@alltag.ch">Mail</a></li>
-</ul>
-<figure></figure>
-    <a href="stars.html"><img src="stars.png" width=150></a>
-    <a href="carres.html"><img src="carres.png" width=150></a>
-    <a href="meules.html"><img src="meules.png" width=150></a>
-    <a href="shootingstar.html"><img src="ball.png" width=150></a>
-    <a href="flag.html"><img src="flagg.png" width=150></a>
-    <a href="lissajous.html"><img src="lissa.png" width=150></a>
-    <a href="random.html"><img src="rainbow.png" width=150></a>
-</figure>
+<script>var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    var i = 1;
+
+window.setInterval(function(){
+    document.body.style.backgroundColor = colors[i];
+    i++;
+    if (i === colors.length){
+        i=0;
+    }
+}, 500);
+
+
+
+</script>
 
 </body>
 </html>

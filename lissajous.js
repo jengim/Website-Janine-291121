@@ -1,11 +1,11 @@
 function setup () {
-    createCanvas(500, 500)
+    createCanvas(700, 700)
     colorMode(HSL, 360, 100,100)
 }
 
-const radius = 150
+const radius = 250
 let a = 0
-let xFactor = 10
+let xFactor = 100
 
 function draw () {
     background(1)

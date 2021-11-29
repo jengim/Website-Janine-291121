@@ -3,6 +3,7 @@
     <a href="index.html"> Back</a>
   <h1>Ball </h1>
   <h2>Perlin</h2>
+  <h6> ACHTUNG! Ball am Anfang kaum zu sehen. :)</h6>
 <head>
 
     <title>Ball</title>
@@ -14,8 +15,8 @@
 
     <style>
       body {
-          margin: 0;
-          padding: 0;
+          margin: 100;
+          padding: 100;
           width: 100%;
           height: 100%;
           font-size: 20;
@@ -31,6 +32,12 @@
           position: fixed;
           overflow: visible;
       }
+      a{
+        color: rgb(227, 168, 255);
+     }
+     a:hover {
+            color: rgb(86, 221, 255);
+        }
   </style>
 
     
@@ -178,11 +185,11 @@ if (i === colors.length){
         time.before = time.now;
 
         let x = simplex.noise2D(10, time.now/speed) * amplification;
-        let y = simplex.noise2D(20, time.now/speed) * amplification;
+        let y = simplex.noise2D(50, time.now/speed) * amplification;
         let position = { x: x, y: y };
         let path = svg.dot(position);
         let size = simplex.noise2D(20, time.now/speed) * amplification;
-        let rgb = "rgb("+ Math.floor((simplex.noise2D(10, time.now/speed) + 1) / 2 * 255) +","+Math.floor((simplex.noise2D(100, time.now/speed)+ 1) / 2 * 255) +","+Math.floor(simplex.noise2D((100, time.now/speed)+ 1) / 2 * 255) +")";
+        let rgb = "rgb("+ Math.floor((simplex.noise2D(10, time.now/speed) + 1) / 2 * 255) +","+Math.floor((simplex.noise2D(100, time.now/speed)+ 3) / 2 * 255) +","+Math.floor(simplex.noise2D((100, time.now/speed)+ 1) / 2 * 255) +")";
 
         dom.dot.setAttributeNS(null, "stroke", rgb);
         dom.dot.setAttributeNS(null, "stroke-width", size);
