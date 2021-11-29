@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Janine</title>
+    <script src="p5.min.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 10;
+            font-family: 'Courier New', Courier, monospace;
+            color: #fff;
+            background-color:red;
+			transition: background-color 1s;
+            user-select: none;
+        }
+
+        stage,
+        svg,
+        path {
+            position: fixed;
+            overflow: visible;
+        }
+    </style>
+
+</head>
+<body>
+    
+    
+
+    
+    <div style="background-color: white;" height=500px>
+    <a href="carres.html"> Carres</a>
+    <a href="meules.html"> Meules</a>
+    <a href="shootingstar.html"> Ball</a>
+    <a href="lissajous.html"> Lissajous</a>
+    
+    
+    
+</div>
+ <h1> Coding 4 the Arts</h1>   
+ <ul>
+    <li> Carres 15.11.21 </li>
+    <li> Meules 15.11.21 </li>
+    <li> Ball 22.11.21 </li>
+    <li> Lissajous 27.11.21</li>
+    
+    
+  </ul>
+
+<script>var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+    var i = 1;
+
+window.setInterval(function(){
+    document.body.style.backgroundColor = colors[i];
+    i++;
+    if (i === colors.length){
+        i=0;
+    }
+}, 5000);
+</script>
+
+</body>
+</html>
